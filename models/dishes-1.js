@@ -16,3 +16,10 @@ var dishSchema = new Schema({
 }, {
   timestamps: true
 });
+
+// the schema is useless so far
+// we need to create a model using it
+var Dishes = mongoose.model('Dish', dishSchema);
+
+// Make this available to our node applications
+module.exports = Dishes;
